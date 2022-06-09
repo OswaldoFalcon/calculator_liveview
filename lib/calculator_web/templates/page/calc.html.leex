@@ -1,0 +1,41 @@
+     <div class="calc">
+        <div class="flex">
+            calc 
+            <div class="options">
+                <label for="radio" class="theme">THEME</label>
+                <div class="radio">
+                    1<input type="radio" name="theme" id="1" checked="checked">  
+                </div>
+                <div class="radio">
+                    2<input type="radio" name="theme" id="2">  
+                </div>
+                <div class="radio">
+                    3<input type="radio" name="theme" id="3">  
+                </div>
+            </div>
+        </div>
+        <div class="screen">
+            <input type="text" placeholder="<%= @current_number %>">
+        </div>
+        <div class="grid">
+            <input type="button" value="7" phx-click="number" phx-value-number="7">
+            <input type="button" value="8" phx-click="number" phx-value-number="8">
+            <input type="button" value="9" phx-click="number" phx-value-number="9">
+            <input type="button" value="DEL" class="delete" phx-click="delete">
+            <input type="button" value="4" phx-click="number" phx-value-number="4">
+            <input type="button" value="5" phx-click="number" phx-value-number="5">
+            <input type="button" value="6" phx-click="number" phx-value-number="6">
+            <input type="button" value="+" phx-click="operator" phx-value-operator="+">
+            <input type="button" value="1" phx-click="number" phx-value-number="1">
+            <input type="button" value="2" phx-click="number" phx-value-number="2">
+            <input type="button" value="3" phx-click="number" phx-value-number="3">
+            <input type="button" value="-" phx-click="operator" phx-value-operator="-">
+            <input type="button" value="." phx-click="number" phx-value-number=".">
+            <input type="button" value="0" phx-click="number" phx-value-number="0">
+            <input type="button" value="/" phx-click="operator" phx-value-operator="/">
+            <input type="button" value="x" phx-click="operator" phx-value-operator="x">
+            <input type="button" value="RESET" class="reset" phx-click="reset">
+            <input type="button" value="=" class="equal" phx-click="solve">
+        </div>
+    </div>
+    
